@@ -1,28 +1,30 @@
 # Pizzería Mamma Mía
 
-#Link del Deploy: 
+#Link del Deploy:
 
-Landing page de una pizzería ficticia, hecha con React y Vite. Muestra un header de bienvenida, un catálogo de pizzas con nombre, precio e ingredientes, y una barra de navegación que simula el estado de sesión de un usuario (logueado / no logueado).
+Landing page de una pizzería ficticia, hecha con React y Vite. Muestra un header de bienvenida, un catálogo de pizzas con nombre, precio e ingredientes, una barra de navegación que simula el estado de sesión de un usuario (logueado / no logueado), y formularios funcionales de registro e inicio de sesión con manejo de estado, eventos y validaciones.
 
-Proyecto correspondiente al Hito 1 del módulo de Introducción a React de Desafío Latam.
+Proyecto correspondiente al Hito 2 del módulo de Introducción a React de Desafío Latam (continuación del Hito 1).
 
 ## Cómo usarlo
 
-Navega por la página: revisa el header, el menú de navegación (con el total de compra formateado) y el catálogo de pizzas con sus ingredientes y precios.
+Navega por la página: revisa el header, el menú de navegación (con el total de compra formateado) y el catálogo de pizzas con sus ingredientes y precios. Usa los botones "Iniciar Sesión" y "Registrarse" del navbar para acceder a los formularios correspondientes; al enviarlos verás un mensaje en pantalla en verde (éxito) o rojo (error) según las validaciones.
 
 ## Tecnologías
 
-React · Vite · Bootstrap 5 · JavaScript (props, componentes funcionales, operador ternario)
+React · Vite · Bootstrap 5 · JavaScript (props, estado con useState, manejo de eventos, componentes funcionales)
 
 ## Estructura
 
-Hito1_Pizzeria_Mamma_Mía/
+Hito2_Pizzeria_Mamma_Mía/
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Header.jsx
 │   │   ├── Home.jsx
 │   │   ├── CardPizza.jsx
+│   │   ├── RegisterPage.jsx
+│   │   ├── LoginPage.jsx
 │   │   └── Footer.jsx
 │   ├── utils/
 │   │   └── formatNumber.js
@@ -40,12 +42,13 @@ npm run dev
 
 | # | Requerimiento | Dónde se cumple |
 |---|---|---|
-| 1 | Navbar, Home y Footer en App.jsx | App.jsx |
-| 2 | Header con título y descripción, llamado en Home | Header.jsx → Home.jsx |
-| 3 | Navbar con menú, variables total y token | Navbar.jsx |
-| 4 | Botones Home y Total siempre visibles | Navbar.jsx |
-| 5 | CardPizza recibe props y se llama 3 veces desde Home | CardPizza.jsx → Home.jsx |
-| 6 | Footer con copyright, llamado en App.jsx | Footer.jsx |
+| 1 | Componente Register con Email, Contraseña y Confirmar contraseña | RegisterPage.jsx |
+| 2 | Validaciones de Register (campos obligatorios, mínimo 6 caracteres, contraseñas iguales) | RegisterPage.jsx |
+| 3 | Mensaje de éxito/error al enviar el formulario de Register | RegisterPage.jsx |
+| 4 | Componente Login con Email y Contraseña | LoginPage.jsx |
+| 5 | Validaciones de Login (campos obligatorios, mínimo 6 caracteres) | LoginPage.jsx |
+| 6 | Mensaje de éxito/error al enviar el formulario de Login | LoginPage.jsx |
+| 7 | Navegación entre Home, Register y Login | App.jsx → Navbar.jsx |
 
 ## Autor
 
