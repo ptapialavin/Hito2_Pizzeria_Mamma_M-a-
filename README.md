@@ -1,6 +1,6 @@
 # Pizzería Mamma Mía
 
-#Link del Deploy: https://hito1-pizzeria-mamma-m-a.vercel.app
+#Link del Deploy: 
 
 Landing page de una pizzería ficticia, hecha con React y Vite. Muestra un header de bienvenida, un catálogo de pizzas con nombre, precio e ingredientes, y una barra de navegación que simula el estado de sesión de un usuario (logueado / no logueado).
 
